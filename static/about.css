@@ -1,0 +1,80 @@
+.about-container{
+
+    max-width:1000px;
+    margin:40px auto;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:25px;
+
+}
+
+.about-card{
+
+    background:#fff;
+
+    padding:30px;
+
+    border-radius:16px;
+
+    box-shadow:0 8px 20px rgba(0,0,0,.08);
+
+    border-left:5px solid #8e44ad;
+
+}
+
+.about-card h1,
+.about-card h2{
+
+    color:#8e44ad;
+
+    margin-bottom:18px;
+
+}
+
+.about-card p{
+
+    color:#444;
+
+    line-height:1.8;
+
+    font-size:16px;
+
+}
+
+.about-card ul{
+
+    padding-left:20px;
+
+    line-height:2;
+
+    color:#444;
+
+}
+
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-top:15px;
+
+}
+
+.skills span{
+
+    background:#8e44ad;
+
+    color:white;
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-size:14px;
+
+}

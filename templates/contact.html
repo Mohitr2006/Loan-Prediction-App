@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+
+{% block title %}
+Contact
+{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='contact.css') }}">
+{% endblock %}
+
+{% block content %}
+<section class="contact-container">
+
+    <div class="contact-info">
+        <h1>Contact Us</h1>
+        <p>
+            We'd love to hear from you. Whether you have a question,
+            or need assistance, feel free to reach out.
+        </p>
+
+        <div class="info-box">
+            <h3>Email</h3>
+            <p>mohitrajworks123@gmail.com</p>
+        </div>
+
+        <div class="info-box">
+            <h3>GitHub</h3>
+            <p>Mohitr2006</p>
+            <a href="https://github.com/Mohitr2006"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="github-link">
+            Visit GitHub ↗
+            </a>
+        </div>
+
+        <div class="info-box">
+            <h3>Linkedin</h3>
+            <p>Mohit Raj</p>
+            <a href="https://www.linkedin.com/in/mohit-raj-b1837735a/"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="linkedin-link">
+            Visit Linkedin ↗
+            </a>
+        </div>
+
+        <div class="info-box">
+            <h3>X</h3>
+            <p>MohitRaj4702</p>
+            <a href="https://x.com/MohitRaj4702"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="twitter-link">
+            Visit X ↗
+            </a>
+        </div>
+    </div>
+
+</section>
+
+
+{% with messages = get_flashed_messages() %}
+    {% if messages %}
+        <script>
+            alert("{{ messages[0] }}");
+        </script>
+    {% endif %}
+{% endwith %}
+
+
+{% endblock %}
+

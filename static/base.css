@@ -1,0 +1,144 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+/* Reset */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+/* ================= GLOBAL ================= */
+
+html,
+body{
+    height:100%;
+}
+
+body{
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+
+    background:linear-gradient(135deg,#f4f4f4,#f5f4f3);
+    color:#000;
+}
+
+/* ================= HEADER ================= */
+
+header{
+    width:100%;
+    position:relative;
+    padding:20px 40px;
+}
+
+nav{
+    position:relative;
+}
+
+/* Logo stays on the left */
+.logo{
+    position:absolute;
+    left:40px;
+    top:50%;
+    transform:translateY(-50%);
+}
+
+/* Navbar centered */
+.nav-links{
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+    width:fit-content;
+    margin:0 auto;
+
+    background:#b476ce;
+    padding:12px 35px;
+    border-radius:50px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.2);
+}
+
+/* Logo */
+
+.logo h2{
+    font-size:28px;
+    font-weight:700;
+}
+
+/* Navigation Links */
+
+.nav-links{
+    gap:30px;
+
+    background:#b476ce;
+    padding:12px 35px;
+    border-radius:50px;
+
+    box-shadow:0 12px 35px rgba(0,0,0,.2);
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-links a:hover{
+    color:black;
+}
+
+/* ================= MAIN ================= */
+
+main{
+    flex:1;
+    width:90%;
+    max-width:1200px;
+    margin:40px auto;
+}
+
+.flash-message{
+    width: fit-content;
+    margin: 20px auto;
+    padding: 14px 22px;
+    background: #ffe5e5;
+    color: #b00020;
+    border: 1px solid #ffb3b3;
+    border-radius: 10px;
+    font-weight: 600;
+    box-shadow: 0 4px 12px rgba(0,0,0,.08);
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+    text-align:center;
+    padding:20px;
+
+    background:rgba(0,0,0,.08);
+    backdrop-filter:blur(10px);
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width:768px){
+
+    header{
+        padding:20px;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:20px;
+    }
+
+    .nav-links{
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:15px;
+    }
+
+}

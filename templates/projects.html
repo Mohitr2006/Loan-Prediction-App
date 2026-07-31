@@ -1,0 +1,84 @@
+{% extends "base.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='projects.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="projects">
+
+    <h1>My Projects</h1>
+
+    <p class="subtitle">
+        A collection of Machine Learning and Data Science projects I've built.
+    </p>
+
+    <div class="project-grid">
+
+        <div class="project-card">
+
+            <h2>Loan Approval Prediction (This Project)</h2>
+
+            <p>
+                I built this project to learn how a machine learning model can be deployed as a real web application. Users can enter applicant details through the website, and the trained model predicts whether a loan is likely to be approved or rejected.
+            </p>
+
+            <div class="tech">
+                <span>Python</span>
+                <span>Flask</span>
+                <span>Scikit-Learn</span>
+                <span>Pandas</span>
+            </div>
+
+            <a href="https://github.com/Mohitr2006/Loan-Approval-Predicator"
+               target="_blank"
+               class="github-btn">
+                View on GitHub
+            </a>
+
+        </div>
+
+        <div class="project-card">
+
+            <h2>Transport Delay Predictor</h2>
+
+            <p>
+                Machine Learning project that predicts public transport arrival delays using weather, traffic, holidays, and event data with a complete preprocessing and model training pipeline.
+            </p>
+
+            <div class="tech">
+                <span>Python</span>
+                <span>Scikit-Learn</span>
+                <span>Feature Engineering</span>
+                <span>Data Preprocessing</span>
+            </div>
+
+            <a href="https://github.com/Mohitr2006/Loan-Approval-Predicator"
+               target="_blank"
+               class="github-btn">
+                View on GitHub
+            </a>
+        </div>
+
+        <div class="project-card">
+
+            <h2>Housing Price Predictor</h2>
+
+            <p>
+                Stay tuned for more AI projects, dashboards, and web applications.
+            </p>
+
+            <div class="tech">
+                <span>Coming Soon</span>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

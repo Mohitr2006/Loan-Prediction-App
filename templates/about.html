@@ -1,0 +1,74 @@
+{% extends "base.html" %}
+
+{% block title %}About{% endblock %}
+
+{% block css %}
+<link rel="stylesheet" href="{{ url_for('static', filename='about.css') }}">
+{% endblock %}
+
+{% block content %}
+
+<section class="about-container">
+
+    <div class="about-card">
+
+        <h1>About This Project</h1>
+
+        <p>
+            This is an end-to-end <strong>Loan Approval Prediction</strong> web application
+            built using Machine Learning and Flask. It predicts whether a loan application
+            is likely to be approved or rejected based on applicant information such as
+            income, CIBIL score, loan amount, employment status, and asset values.
+        </p>
+
+    </div>
+
+    <div class="about-card">
+
+        <h2>How It Works</h2>
+
+        <ul>
+            <li>Users enter loan applicant details through a responsive web interface.</li>
+            <li>Flask receives the form data and converts it into a pandas DataFrame.</li>
+            <li>A preprocessing pipeline performs scaling and one-hot encoding.</li>
+            <li>The processed data is passed to a trained Random Forest model.</li>
+            <li>The model predicts whether the loan will be <strong>Approved</strong> or <strong>Rejected</strong>.</li>
+        </ul>
+
+    </div>
+
+    <div class="about-card">
+
+        <h2>Tools Used</h2>
+
+        <div class="skills">
+
+            <span>Python</span>
+            <span>Flask</span>
+            <span>Scikit-Learn</span>
+            <span>Pandas</span>
+            <span>NumPy</span>
+            <span>HTML</span>
+            <span>CSS</span>
+            <span>Joblib</span>
+
+        </div>
+
+    </div>
+
+    <div class="about-card">
+
+        <h2>About the Developer</h2>
+
+        <p>
+            Hi, I'm <strong>Mohit Raj</strong>, an Artificial Intelligence and Data Science
+            student passionate about Machine Learning and building practical AI applications.
+            I enjoy creating end-to-end ML projects that combine data preprocessing,
+            model development, and web deployment using Flask.
+        </p>
+
+    </div>
+
+</section>
+
+{% endblock %}
